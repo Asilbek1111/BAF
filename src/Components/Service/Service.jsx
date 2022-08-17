@@ -18,7 +18,7 @@ const Service = () => {
   const [products, setProducts] = useState([]);
 
   useEffect(() => {
-    fetch("https://93.189.40.27:2200/categories/")
+    fetch("http://93.189.40.27:2200/categories/")
       .then((res) => res.json())
       .then((data) => setProducts(data));
   }, []);
