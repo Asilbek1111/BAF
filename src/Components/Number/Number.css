@@ -1,0 +1,59 @@
+.number {
+  background-image: url("../../Images/Rectangle48.png");
+  color: #5f8d8f;
+  padding-top: 3rem;
+}
+
+.n-heading {
+  text-align: center;
+}
+
+.n-wrapper {
+  display: flex;
+  padding-top: 3rem;
+}
+
+.n-right {
+  display: flex;
+  flex-direction: column;
+}
+
+.n-right h1 {
+  margin-bottom: 3rem;
+  margin-left: 12rem;
+  margin-top: 10rem;
+  font-size: 60px;
+}
+
+.n-right p {
+  font-size: 19px;
+  width: 33rem;
+  line-height: 30px;
+  padding-top: 7rem;
+  margin-left: 12rem;
+}
+
+.little {
+  position: absolute;
+  top: 10%;
+  left: 160%;
+  z-index: -1;
+}
+
+.n-left {
+  position: relative;
+}
+
+.n-heading {
+  font-size: 50px;
+}
+
+.trust {
+  padding: 4rem;
+}
+.trust h1 {
+  text-align: center;
+  font-size: 50px;
+  color: #5b8a8d;
+  font-weight: 500;
+}

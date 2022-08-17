@@ -1,0 +1,85 @@
+.service h1 {
+  text-align: center;
+  margin: 6rem 0 4rem 0;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 18px;
+  /* identical to box height, or 38% */
+
+  color: #5b8a8d;
+}
+
+.what {
+  border: 1px solid #aecbcd;
+  border-radius: 44px;
+  display: flex;
+  width: fit-content;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.bir {
+  background-color: #5b8a8d;
+  border-radius: 44px;
+  padding: 10px 50px;
+  color: white;
+}
+
+.ikki {
+  padding: 10px 50px;
+  color: #5b8a8d;
+}
+
+.swiper {
+  width: 80%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 60%;
+  height: 60%;
+  object-fit: cover;
+}
+
+.what {
+  margin-bottom: 8rem;
+}
+
+.card {
+  width: 170px;
+  text-align: center;
+  font-size: 19px;
+}
+.card img {
+  width: 100%;
+  height: 14rem;
+  border-radius: 5rem;
+  background-color: #FFEBE2;
+}
+
+a{
+  text-decoration: none;
+  color: black;
+}

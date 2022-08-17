@@ -1,0 +1,72 @@
+.header {
+  background-color: #5b8a8d;
+}
+
+.h-left {
+  color: white;
+}
+.h-right {
+  position: relative;
+}
+.h-right img {
+  position: absolute;
+  top: -17rem;
+  left: -23rem;
+}
+
+.h-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 70%;
+  margin: 0 auto;
+}
+
+
+.h-left img{
+    margin-bottom: 2rem;
+    margin-top: 3rem;
+}
+
+.h-left h2{
+    margin-bottom: 4rem;
+    font-weight: 400;
+    font-size: 25px;
+}
+
+.h-left .h-btns{
+    margin-bottom: 4rem;
+    display: flex;
+}
+
+.h-b-1, .h-b-2{
+    max-height: 40px;
+    padding: 10px 20px;
+    border: 1px white solid;
+    background-color: inherit;
+    border-radius: 20px;
+    margin-right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.h-b-2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-d img{
+width: 100%;
+}
+
+.img-d{
+    display: flex;
+    justify-content:flex-start;
+    align-items:center;
+}
+
+.rasm{
+  box-shadow: 10px rgba(255, 255, 255, 0.8);
+}

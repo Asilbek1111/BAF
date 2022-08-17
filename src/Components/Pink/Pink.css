@@ -1,0 +1,54 @@
+.pink {
+  background-color: #feebe2;
+  padding: 4rem;
+}
+
+.p-wrapper {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  /* align-items: center; */
+  padding: 50px 30px;
+  border: 1px solid #5b8a8d;
+  border-radius: 50px;
+  color: #5b8a8d;
+}
+
+.p-wrapper img{
+    width: 13%;
+    height: 13%;
+}
+
+.bottom p{
+    width: 12rem;
+    margin-left: 4rem;
+}
+
+ul {
+  list-style: none;
+}
+
+.top {
+  display: flex;
+  justify-content: space-evenly;
+  padding-bottom: 6rem;
+}
+
+.bottom {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.top input{
+    border: none;
+    border-bottom: 1px solid #666;
+    outline: none;
+    background-color: inherit;
+    margin-top: 1.5rem;
+}
+
+.top input::placeholder{
+    color: #5b8a8d;
+}

@@ -1,0 +1,27 @@
+.navbar {
+  background-color: #5b8a8d;
+}
+.n-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2.5rem 1rem;
+}
+
+.logo{
+  position: absolute;
+  left: 14rem;
+}
+
+.n-list {
+list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.n-item{
+    margin-right: 2rem;
+    font-size: 20px;
+}

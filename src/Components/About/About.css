@@ -1,0 +1,82 @@
+.about {
+  background: #5b8a8d;
+  margin-top: 3rem;
+  /* z-index: -2; */
+}
+
+.a-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 80%;
+  margin: 0 auto;
+  color: white;
+}
+
+.shape1,
+.gilam {
+  position: absolute;
+}
+.shape1 {
+  top: 20%;
+  left: 18%;
+  z-index: 0;
+}
+
+.scarf {
+  position: relative;
+  z-index: 3;
+}
+
+.a-right {
+  padding: 0 4rem;
+}
+
+.a-right h1 {
+  font-size: 4rem;
+  padding: 0 15rem 0 0;
+  line-height: 50px;
+  margin-bottom: 2rem;
+}
+
+.a-right p {
+  font-size: 19px;
+  margin-bottom: 3rem;
+  padding: 0 10rem 0 0;
+}
+
+.gilam {
+  top: 10%;
+  right: -12.3%;
+}
+.a-more:hover {
+  opacity: 0.6;
+}
+
+.more {
+  display: flex;
+  background-color: #2d5a5e;
+  border-radius: 44px;
+  border: none;
+  padding: 0 40px 0 0;
+  align-items: center;
+  color: white;
+  position: relative;
+  padding: 15px 70px;
+  cursor: pointer;
+  width: 14rem;
+}
+.arrow {
+  padding: 14px 18px;
+  border-radius: 44px;
+  background-color: white;
+  margin-right: 10px;
+  position: absolute;
+  left: 0;
+  transition: 0.4s;
+}
+
+.more:hover .arrow{
+    left: 80%;
+}
