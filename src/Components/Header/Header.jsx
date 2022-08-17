@@ -17,7 +17,7 @@ import Footer from "../Footer/Footer";
 import Bounce from "react-reveal/Bounce";
 
 const Header = () => {
-  const { lang, setLang } = useContext(MyContext);
+  const { lang } = useContext(MyContext);
   return (
     <>
       <div className="header">

@@ -1,6 +1,4 @@
 import React from "react";
-import Download from "../../Images/download.png";
-import Video from "../../Images/video.png";
 import Group1 from "../../Images/group1.png";
 import Group2 from "../../Images/group2.png";
 

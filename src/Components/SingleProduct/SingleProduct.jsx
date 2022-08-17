@@ -14,7 +14,7 @@ const SingleProduct = () => {
     fetch(`http://93.189.40.27:2200/products/`)
       .then((res) => res.json())
       .then((data) => setProduct(data.find((e) => e.id === Number(productId))));
-  }, []);
+  }, [productId]);
   return (
     <div className="singleProduct">
       <Navbar />

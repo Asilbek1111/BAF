@@ -6,7 +6,7 @@ import Roll from "react-reveal/Roll";
 import Rotate from "react-reveal/Rotate";
 
 const Contact = () => {
-  const { lang, setLang } = useContext(MyContext);
+  const { lang } = useContext(MyContext);
   const formBtn = (e) => {
     e.preventDefault();
     if (e.target[0].value.length > 0 && e.target[1].value.length > 0) {

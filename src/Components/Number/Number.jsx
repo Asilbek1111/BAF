@@ -6,7 +6,7 @@ import { MyContext } from "../../Context/Context";
 import Roll from "react-reveal/Roll";
 
 const Number = () => {
-  const { lang, setLang } = useContext(MyContext);
+  const { lang } = useContext(MyContext);
 
   return (
     <>
