@@ -10,6 +10,7 @@ import "swiper/css/navigation";
 import { Navigation, Pagination } from "swiper";
 import { MyContext } from "../../Context/Context";
 import { Link } from "react-router-dom";
+import axios from "axios";
 // import "swiper/css/pagination";
 // import { useEffect } from "react";
 
