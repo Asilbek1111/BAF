@@ -6,6 +6,10 @@
     width: 100%;
     border-radius: 25px;
     background-color: pink;
+    transition: 0.4s;
+}
+.p-card img:hover{
+  transform: scale(1.08);
 }
 .c-bottom p {
   text-align: center;

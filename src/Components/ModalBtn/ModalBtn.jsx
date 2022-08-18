@@ -2,6 +2,7 @@
 // import Product from "../Products/Product";
 
 // Images
+import Bounce from "react-reveal/Bounce";
 
 import React from "react";
 import Modal from "react-modal";
@@ -74,9 +75,11 @@ Xabar ✏️ ${e.target[2].value}%0A
 
   return (
     <section>
-      <button onClick={openModal} className="buy">
-        Xarid qilish
-      </button>
+      <Bounce left cascade>
+        <button onClick={openModal} className="buy">
+          Xarid qilish
+        </button>
+      </Bounce>
 
       <Modal
         isOpen={modalIsOpen}

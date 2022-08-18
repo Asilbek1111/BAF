@@ -10,34 +10,34 @@ import "swiper/css/navigation";
 import { Navigation, Pagination } from "swiper";
 import { MyContext } from "../../Context/Context";
 import { Link } from "react-router-dom";
-import axios from "axios";
+
 // import "swiper/css/pagination";
 // import { useEffect } from "react";
 
 const Service = () => {
   const { lang } = useContext(MyContext);
   const [products, setProducts] = useState([]);
-
   useEffect(() => {
-    fetch("http://93.189.40.27:2200/categories/")
-      .then((res) => res.json())
+    fetch("https://api-baf.abba.uz/categories/")
+      .then((response) => response.json())
       .then((data) => setProducts(data));
   }, []);
+  
   return (
     <div className="service">
-      {/* <Flip left> */}
+      <Flip left>
       <h1>
         {lang === "RU" && "Что мы предлагаем?"}
         {lang === "EN" && "What we suggest?"}
         {lang === "UZ" && "Biz nima taklif qilamiz?"}
       </h1>
-      {/* </Flip> */}
+      </Flip>
       <div className="what">
         <div className="bir">Продукты</div>
         <div className="ikki">Услуги</div>
       </div>
       <>
-        {/* <Flip left> */}
+        <Flip left>
         <Swiper
           slidesPerView={4}
           loop={true}
@@ -72,7 +72,7 @@ const Service = () => {
               </SwiperSlide>
             ))}
         </Swiper>
-        {/* </Flip> */}
+        </Flip>
       </>
     </div>
   );
