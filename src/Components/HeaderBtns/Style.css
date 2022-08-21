@@ -55,13 +55,9 @@
   transform: scale(1.1);
 }
 .modal {
-  position: absolute;
-  width: 500px;
-  height: 400px;
   margin: 0 auto;
   top: -10rem;
   left: 20rem;
-  z-index: 999;
 }
 
 .hide {

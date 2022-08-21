@@ -17,13 +17,27 @@ import Bounce from "react-reveal/Bounce";
 import Headerbtns from "../HeaderBtns/Headerbtns";
 
 const Header = () => {
-  const { lang } = useContext(MyContext);
+  const { lang, open, setOpen } = useContext(MyContext);
   return (
     <>
       <div className="header">
         <Navbar />
         <div className="h-wrapper">
           <div className="h-left">
+            {open && (
+              <div className="modal">
+                <button onClick={() => setOpen(false)} className="close">X</button>
+                <iframe
+                  width={560}
+                  height={315}
+                  src="https://www.youtube.com/embed/Vw6utYElVFg"
+                  title="YouTube video player"
+                  frameBorder={0}
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                />
+              </div>
+            )}
             <img className="headding" src={Heading} alt="" />
             <h2>
               {lang === "RU" && "Востребованное направление бизнеса"}
