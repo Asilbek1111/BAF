@@ -11,7 +11,7 @@ import Rotate from "react-reveal/Rotate";
 
 const Brands = () => {
   return (
-    <div className="brands">
+    <div className="brands" id="brands">
       <Rotate>
         <Swiper
           grabCursor="true"

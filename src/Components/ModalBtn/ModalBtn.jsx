@@ -4,9 +4,10 @@
 // Images
 import Bounce from "react-reveal/Bounce";
 
-import React from "react";
+import React, { useContext } from "react";
 import Modal from "react-modal";
 import "./ModalBtn.css";
+import { MyContext } from "../../Context/Context";
 const customStyles = {
   content: {
     top: "50%",
@@ -24,6 +25,7 @@ const customStyles = {
 };
 
 const ModalBtn = () => {
+  const { lang } = useContext(MyContext);
   const [modalIsOpen, setIsOpen] = React.useState(false);
 
   function openModal() {
@@ -77,7 +79,9 @@ Xabar ✏️ ${e.target[2].value}%0A
     <section>
       <Bounce left cascade>
         <button onClick={openModal} className="buy">
-          Xarid qilish
+          {lang === "UZ" && "Xarid qilish"}
+          {lang === "RU" && "Покупка"}
+          {lang === "EN" && "Purchase"}
         </button>
       </Bounce>
 
@@ -111,7 +115,9 @@ Xabar ✏️ ${e.target[2].value}%0A
           </label>
           <textarea id="textarea" name="textarea" className="form-text" />
           <button id="btnSubmit" type="submit" className="form-btn">
-            Send
+            {lang === "EN" && "Send"}
+            {lang === "UZ" && "Jo'natish"}
+            {lang === "RU" && "Отправить"}
           </button>
         </form>
       </Modal>

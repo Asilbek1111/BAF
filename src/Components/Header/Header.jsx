@@ -3,7 +3,6 @@ import Navbar from "../Navbar/Navbar";
 import "./Header.css";
 import Heading from "../../Images/heading.png";
 import Rasm from "../../Images/rasm.png";
-import Buttons from "../Buttons/Buttons";
 import LangBtns from "../LangBtns/LangBtns";
 import { MyContext } from "../../Context/Context";
 import Service from "../Service/Service";
@@ -15,6 +14,7 @@ import Pink from "../Pink/Pink";
 import Footer from "../Footer/Footer";
 // import Back from "../../Images/back.png";
 import Bounce from "react-reveal/Bounce";
+import Headerbtns from "../HeaderBtns/Headerbtns";
 
 const Header = () => {
   const { lang } = useContext(MyContext);
@@ -24,14 +24,14 @@ const Header = () => {
         <Navbar />
         <div className="h-wrapper">
           <div className="h-left">
-            <img src={Heading} alt="" />
+            <img className="headding" src={Heading} alt="" />
             <h2>
               {lang === "RU" && "Востребованное направление бизнеса"}
               {lang === "EN" && "Demanded line of business"}
               {lang === "UZ" && "Talab qilingan biznes yo'nalishi"}
             </h2>
             <Bounce left>
-              <Buttons />
+              <Headerbtns />
             </Bounce>
           </div>
           <div className="h-right">

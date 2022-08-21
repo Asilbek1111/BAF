@@ -1,13 +1,15 @@
-import React, { useEffect, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import Contact from "../Contact/Contact";
 import Footer from "../Footer/Footer";
 import Navbar from "../Navbar/Navbar";
 import "./Category.css";
 import { Link, useParams } from "react-router-dom";
 import Flip from "react-reveal/Flip";
+import { MyContext } from "../../Context/Context";
 
 const Category = () => {
   const [products, setProducts] = useState([]);
+  const { lang } = useContext(MyContext);
 
   useEffect(() => {
     fetch(`https://api-baf.abba.uz/products/`)
@@ -18,7 +20,11 @@ const Category = () => {
   return (
     <div className="Category">
       <Navbar />
-      <h1>Our products</h1>
+      <h1>
+        {lang === "RU" && "Наши продукты"}
+        {lang === "EN" && "Our products"}
+        {lang === "UZ" && "Bizning mahsulotlar"}
+      </h1>
       <Flip right cascade>
         <div className="wrap-cards">
           {products
@@ -28,7 +34,11 @@ const Category = () => {
                 <div className="p-card">
                   <img src={product.image1} alt="" />
                   <div className="c-bottom">
-                    <p>{product.name_uz}</p>
+                    <p>
+                      {lang === "UZ" && product.name_uz}
+                      {lang === "EN" && product.name_en}
+                      {lang === "RU" && product.name_ru}
+                    </p>
                   </div>
                 </div>
               </Link>

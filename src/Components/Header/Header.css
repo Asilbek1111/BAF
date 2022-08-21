@@ -7,11 +7,14 @@
 }
 .h-right {
   position: relative;
+  
+ 
 }
 .h-right img {
   position: absolute;
-  top: -17rem;
-  left: -23rem;
+  top: -23rem;
+  left: -22rem;
+  
 }
 
 .h-wrapper {
@@ -23,7 +26,7 @@
 }
 
 
-.h-left img{
+.h-left .headding{
     margin-bottom: 2rem;
     margin-top: 3rem;
 }

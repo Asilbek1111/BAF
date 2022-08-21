@@ -1,0 +1,30 @@
+.about-wrap{
+    display: flex;
+    padding: 8rem 0;
+}
+.l-side{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    font-size: 20px;
+    padding: 3rem 6rem;
+}
+
+.l-side h1{
+    font-size: 40px;
+    margin-bottom: 4rem;
+}
+
+.l-side p{
+    line-height: 30px;
+    margin-bottom: 2rem;
+}
+.r-side{
+    flex: 1;
+    padding: 3rem 6rem;
+
+}
+.r-side img{
+    margin-right: 10px;
+    margin-bottom: 10px;
+}

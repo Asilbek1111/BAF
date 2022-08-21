@@ -1,5 +1,6 @@
 .navbar {
   background-color: #5b8a8d;
+  /* z-index: 9999; */
 }
 .n-container {
   display: flex;
@@ -8,20 +9,30 @@
   padding: 2.5rem 1rem;
 }
 
-.logo{
+.logo {
   position: absolute;
   left: 14rem;
 }
 
 .n-list {
-list-style: none;
+  margin-right: 5rem;
+  list-style: none;
   display: flex;
   align-items: center;
   justify-content: center;
   color: white;
 }
 
-.n-item{
-    margin-right: 2rem;
-    font-size: 20px;
+.n-item {
+  margin-right: 2rem;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.navbar a{
+  color: rgb(232, 221, 221);
+}
+
+.navbar a:hover{
+  color: white;
 }

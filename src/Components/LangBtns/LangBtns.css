@@ -1,6 +1,9 @@
 .lang-btns {
   display: flex;
   flex-direction: column;
+  left: 3rem;
+  top: -5rem;
+  position: absolute;
 }
 
 .lang-btns button {
@@ -13,6 +16,7 @@
   cursor: pointer;
   transition: 0.4s;
   border-radius: 0;
+  padding: 10px;
 }
 
 .lang-btns button:hover {

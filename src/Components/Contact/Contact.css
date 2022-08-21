@@ -18,8 +18,7 @@
   margin-bottom: 2rem;
 }
 
-form input,
-button {
+.inp {
   padding: 20px 35px;
   border: 1px solid white;
   background-color: inherit;

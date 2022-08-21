@@ -16,6 +16,37 @@
 .n-right {
   display: flex;
   flex-direction: column;
+  position: relative;
+}
+.n-right span {
+  position: absolute;
+  font-size: 60px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.n-right h1:hover {
+  text-decoration: underline;
+}
+
+.n-right span:active {
+  text-decoration: underline;
+}
+
+.n-right span:hover {
+  text-decoration: underline;
+}
+.num1000 {
+  top: 10rem;
+  left: -2rem;
+}
+.num200 {
+  top: 10rem;
+  left: 25rem;
+}
+.num100 {
+  top: 10rem;
+  left: 40rem;
 }
 
 .n-right h1 {
@@ -36,7 +67,7 @@
 .little {
   position: absolute;
   top: 10%;
-  left: 160%;
+  left: 150%;
   z-index: -1;
 }
 

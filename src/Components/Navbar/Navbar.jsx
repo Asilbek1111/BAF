@@ -2,7 +2,7 @@ import React, { useContext } from "react";
 import { MyContext } from "../../Context/Context";
 import Logo from "../../Images/logo.png";
 import "./Navbar.css";
-
+import {Link} from 'react-router-dom'
 const Navbar = () => {
   const { lang } = useContext(MyContext);
   return (
@@ -13,24 +13,32 @@ const Navbar = () => {
         </div>
         <ul className="n-list">
           <li className="n-item">
-            {lang === "RU" && "Продукты"}
-            {lang === "EN" && "Products"}
-            {lang === "UZ" && "Mahsulotlar"}
+            <a href="/#service">
+              {lang === "RU" && "Продукты"}
+              {lang === "EN" && "Products"}
+              {lang === "UZ" && "Mahsulotlar"}
+            </a>
           </li>
           <li className="n-item">
-            {lang === "RU" && "О нас"}
-            {lang === "EN" && "About us"}
-            {lang === "UZ" && "Biz haqimizda"}
+            <Link to="/about">
+              {lang === "RU" && "О нас"}
+              {lang === "EN" && "About us"}
+              {lang === "UZ" && "Biz haqimizda"}
+            </Link>
           </li>
           <li className="n-item">
-            {lang === "RU" && "Наши фабрики"}
-            {lang === "EN" && "Our firms"}
-            {lang === "UZ" && "Bizning fabrika"}
+            <a href="/#brands">
+              {lang === "RU" && "Наши фабрики"}
+              {lang === "EN" && "Our firms"}
+              {lang === "UZ" && "Bizning fabrika"}
+            </a>
           </li>
           <li className="n-item">
-            {lang === "RU" && "Связь"}
-            {lang === "EN" && "Contact"}
-            {lang === "UZ" && "Aloqa"}
+            <a href="/#contact">
+              {lang === "RU" && "Связь"}
+              {lang === "EN" && "Contact"}
+              {lang === "UZ" && "Aloqa"}
+            </a>
           </li>
         </ul>
       </div>

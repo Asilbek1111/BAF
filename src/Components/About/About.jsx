@@ -6,8 +6,9 @@ import Shape1 from "../../Images/shape1.png";
 import Arrow from "../../Images/arrow.png";
 import { MyContext } from "../../Context/Context";
 import LightSpeed from "react-reveal/LightSpeed";
+import { Link } from "react-router-dom";
 const About = () => {
-  const { lang} = useContext(MyContext);
+  const { lang } = useContext(MyContext);
 
   return (
     <div className="about">
@@ -44,12 +45,17 @@ const About = () => {
                 "Jamoamiz yengil sanoat korxonalarini tashqi bozorga chiqarishga ixtisoslashgan."}
             </p>
           </LightSpeed>
-          <button className="more">
-            <div className="arrow">
-              <img src={Arrow} alt="" />
-            </div>
-            Подробнее
-          </button>
+          <Link to="/about">
+            <button
+              className="more"
+              onClick={() => window.scrollTo({ top: 0 })}
+            >
+              <div className="arrow">
+                <img src={Arrow} alt="" />
+              </div>
+              Подробнее
+            </button>
+          </Link>
           <img className="gilam" src={Gilam} alt="" />
         </div>
       </div>

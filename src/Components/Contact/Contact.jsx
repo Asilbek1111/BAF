@@ -34,7 +34,7 @@ Xabar ☎: ${e.target[2].value}%0A
     }
   };
   return (
-    <div className="contact">
+    <div className="contact" id="contact">
       <div className="c-left">
         <h1>
           {lang === "RU" && "Eсть какой нибудь вопросы?"}
@@ -43,9 +43,9 @@ Xabar ☎: ${e.target[2].value}%0A
         </h1>
         <Roll left cascade>
           <form onSubmit={formBtn}>
-            <input type="text" placeholder="Имя" />
-            <input type="number" placeholder="ТЕЛЕФОН НОМЕР" />
-            <button type="submit">
+            <input type="text" className="inp" placeholder="Имя" />
+            <input type="number" className="inp" placeholder="ТЕЛЕФОН НОМЕР" />
+            <button type="submit" className="inp">
               {lang === "RU" && "ОТПРАВИТЬ"}
               {lang === "EN" && "SEND"}
               {lang === "UZ" && "JO`NATISH"}
